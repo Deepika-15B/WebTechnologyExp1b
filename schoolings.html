@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Qualifications</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    header {
+      background-color: #000000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+    header h1 {
+      margin: 10px 0;
+    }
+
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: #1E90FF;
+    }
+  </style>
+</head>
+<body bgcolor="#f5f5dc" style="text-align: center;">
+
+  <header>
+    <img src="myphoto.jpeg" alt="My Photo">
+    <h1>DEEPIKA</h1>
+  </header>
+
+  <h1>My Schoolings</h1>
+  <br>
+  <table>
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Grade</th>
+        <th>School Name</th>
+        <th>Percentage</th>
+        <th>Certificates</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>11th</td>
+        <td>Kalaimagal Kalvi Nilayam</td>
+        <td>89%</td>
+        <td>
+     
+          <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#certificateModal11">View</button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>12th</td>
+        <td>Kalaimagal Kalvi Nilayam</td>
+        <td>92.5%</td>
+        <td>
+         
+          <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#certificateModal12">View</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+
+  <h2>Extracurricular Activities</h2>
+  <p>
+    I was an active participant in debates, coding competitions, and science fairs during my schooling. I also enjoyed playing volleyball and was part of my school's volleyball team.
+  </p>
+  <br>
+  <p style="text-align: center; margin-top: 20px;">
+    <a href="index.html">Back to Home</a>
+  </p>
+
+  <div class="modal fade" id="certificateModal11" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="cert11.jpg" alt="11th Certificate" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="certificateModal12" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="cert12.jpg" alt="12th Certificate" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
