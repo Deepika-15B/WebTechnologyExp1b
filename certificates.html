@@ -25,6 +25,9 @@
     header h1 {
       margin: 10px 0;
     }
+    h1 {
+      color: #4CAF50;
+    }
     .certifications {
       margin: 20px auto;
       display: flex;
@@ -32,7 +35,7 @@
       gap: 15px;
       align-items: center;
     }
-    
+
     .certifications a {
       color: #4CAF50;
       text-decoration: none;
@@ -42,12 +45,43 @@
       border-radius: 5px;
       transition: background-color 0.3s, color 0.3s;
     }
-   
+
+    .certificates {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .certificates input[type="checkbox"] {
+      display: none;
+    }
+
+    .certificates label {
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 10px;
+      border: 2px solid #4CAF50;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    .certificates input[type="checkbox"]:checked + label + .cert-image {
+      display: block;
+    }
+
+    .cert-image {
+      width: 80%;
+      height: auto;
+      display: none; 
+    }
+
     p a {
       color: #0000EE;
       text-decoration: none;
     }
-  
+
   </style>
 </head>
 <body>
@@ -57,15 +91,28 @@
     <h1>DEEPIKA</h1>
   </header>
 
-  <h1 style="color: #4CAF50;">My Certifications</h1>
+  <h1>My Certifications</h1>
 
   <div class="certifications">
-    <a href="file:///C:/Users/DEEPIKA/Documents/CERTIFICATES/CISCO%20python.pdf" target="_blank">Python - CISCO</a>
-    <a href="file:///C:/Users/DEEPIKA/Documents/CERTIFICATES/Mobile%20App%20development.pdf" target="_blank">Mobile App Development - thing</a>
-    <a href="file:///C:/Users/DEEPIKA/Downloads/Design%20&%20Implementation%20of%20Human-Computer%20Interfaces_11zon.pdf" target="_blank">Design and Implementation of Human Computer Interface - NPTEL</a>
+    <div class="certificates">
+
+      <input type="checkbox" id="cert1">
+      <label for="cert1">Python - CISCO</label>
+      <img class="cert-image" src="cisco.jpg" alt="Python - CISCO Certificate">
+
+      
+      <input type="checkbox" id="cert2">
+      <label for="cert2">Mobile App Development - Thing</label>
+      <img class="cert-image" src="mobile.jpg" alt="Mobile App Development Certificate">
+
+  
+      <input type="checkbox" id="cert3">
+      <label for="cert3">Design and Implementation of Human Computer Interface - NPTEL</label>
+      <img class="cert-image" src="nptel.jpg" alt="Design and Implementation of Human Computer Interface Certificate">
+    </div>
   </div>
 
-  <p style="text-align: center; margin-top: 20px;">
+  <p>
     <a href="index.html">Back to Home</a>
   </p>
 
